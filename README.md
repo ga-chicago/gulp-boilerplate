@@ -7,12 +7,13 @@
 Because this is meant for students we want to keep this as simple as possible. Let's start with system requirements:
 
 - Node.js 4.0+
-- Gulp
+- Gulp (task runner)
+- Bower (front-end package manager)
 
 Before you begin you'll need to install the global dependencies. Run these commands to set yourself up for success:
 
 ```
-npm install -g gulp-cli
+npm install -g gulp-cli bower
 ```
 
 ### Installation
