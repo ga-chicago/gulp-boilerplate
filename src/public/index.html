@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Task Runners and Gulp</title>
+  <meta name="description" content="This page is dedicated to showing you how useful task runners like Gulp are and how to use them" />
+  <meta name="author" content="Bill Patrianakos" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+  <!--[if lt IE 9]>
+  <script src="/vendor/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="/vendor/es5-shim/es5-shim.min.js"></script>
+  <script src="/vendor/respond/dest/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header class="container">
+    <div class="row">
+      <div class="row-12">
+        <h1>Introducing Gulp</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row-loose">
+      <div class="col-9">
+        <h2>Welcome to Gulp</h2>
+        <p>
+          Gulp is a task runner that makes common boring tasks easy and efficient. There are two main task runners in JavaScript: Grunt and Gulp. Neither one is better than the other. They only differ in how they operate. There are many more task runners for JavaScript out there than just Grunt and Gulp but we'll focus only on Gulp today.
+        </p>
+
+        <p>
+          Gulp's differentiating feature is that is lets you write tasks using vanilla JavaScript. It operates mostly on "pipes" which basically means that the output from one program is fed to another program before any output is given. You can chain programs together so one input, like say a JavaScript file, can be piped through an almost infinite number of programs in sequence to do things like check for errors, enforce code styles, minification, etc.
+        </p>
+
+        <h2>Using Gulp</h2>
+
+        <p>
+          The page you are reading now is made possible by the power of Gulp. The basic idea is that you install the Gulp command line application globally, then install the gulp library and any plugins locally to your project. With all of your dependencies installed you now just need to apply transformations to files through Gulp tasks.
+        </p>
+
+        <p>
+          Gulp tasks are written in a <pre>gulpfile</pre> which is a vanilla JavaScript file. See this project's gulpfile for an example of this in action.
+        </p>
+
+        <h2>Source, Destination, Watch</h2>
+        <p>
+          With Gulp you'll use three main parts of its API. The <pre><code>src</code></pre>, <pre><code>dest</code></pre>, and <pre><code>watch</code></pre> methods. The 'src' method tells gulp to look for a file(s)/folder(s) and treat what it finds as source material then pipe it to the next task. After being piped through multiple functions your code will likely be ready to be released to its destination. This is where the 'dest' method comes in. This method tells gulp where to put the changed output of the piped data. Gulp's 'watch' method simply watches files or folders then executes tasks whenever changes are made to them. This allows for cool tricks like not having to use Nodemon, Forever, or other libraries to monitor your code.
+        </p>
+      </div>
+
+      <div class="col-3">
+        <h3>What can you do with Gulp tasks?</h3>
+        <p>Here's the short list:</p>
+        <ul>
+          <li>Run a static server</li>
+          <li>Run a web application server</li>
+          <li>Lint JavaScript files</li>
+          <li>Transpile LESS to CSS</li>
+          <li>Reload pages when files change</li>
+          <li>Replace references to local libraries with those hosted on a CDN</li>
+          <li>Concatenate files together</li>
+          <li>...and much more</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/js/scripts.js"></script>
+
+</body>
+</html>
