@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/billpatrianakos/ga-gulp-project/issues"
   },
-  "homepage": "https://github.com/billpatrianakos/ga-gulp-project#readme"
+  "homepage": "https://github.com/billpatrianakos/ga-gulp-project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "jshint-stylish": "^2.2.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
