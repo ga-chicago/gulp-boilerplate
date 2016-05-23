@@ -1,0 +1,19 @@
+{
+  "name": "ga-gulp-project",
+  "version": "1.0.0",
+  "description": "Project outlining a gulp file for students to build on",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billpatrianakos/ga-gulp-project.git"
+  },
+  "author": "Bill Patrianakos <bill@billpatrianakos.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billpatrianakos/ga-gulp-project/issues"
+  },
+  "homepage": "https://github.com/billpatrianakos/ga-gulp-project#readme"
+}
