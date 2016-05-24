@@ -3,12 +3,15 @@
 // This file is responsible for defining
 // and running our Gulp tasks.
 
+'use strict';
+
 // Require our dependencies
 var gulp      = require('gulp'),
     less      = require('gulp-less'),
     jshint    = require('gulp-jshint'),
     stylish   = require('jshint-stylish'),
     gls       = require('gulp-live-server');
+
 
 
 // Server
@@ -22,6 +25,7 @@ gulp.task('server', function() {
     server.start.bind(server)()
   });
 });
+
 
 
 // Run jshint on JS files
@@ -44,11 +48,13 @@ gulp.task('less', function() {
 });
 
 
+
 // Watch for changes and run defined tasks
 gulp.task('watch', function() {
   gulp.watch(['./src/index.js', './src/public/js/**/*.js'], ['jshint']);
   gulp.watch(['./src/public/less/**/*.less'], ['less']);
 });
+
 
 
 // Default task
