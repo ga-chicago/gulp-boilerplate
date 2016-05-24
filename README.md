@@ -1,4 +1,4 @@
-# Gulp Example
+# Gulp Boilerplate
 
 > Simple Express app used to teach Gulp and why it's useful
 
