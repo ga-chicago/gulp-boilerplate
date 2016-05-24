@@ -25,6 +25,7 @@ app.get('/?', function(req, res, next) {
   res.sendFile(__dirname + '/public/index.html');
 });
 
+console.log('What is going on?');
 
 // Server startup
 // --------------
