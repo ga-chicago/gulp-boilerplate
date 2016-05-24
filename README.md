@@ -20,7 +20,9 @@ npm install -g gulp-cli bower
 
 ### Installation
 
-Just run `npm install` and you'll be good to go. Create a `.nvmrc` file with your preferred Node version
+Just run `npm install && bower install` and you'll be good to go. 
+
+Create a `.nvmrc` file with your preferred Node version
 
 ## Usage
 
