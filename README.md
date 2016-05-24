@@ -1,12 +1,14 @@
 # Gulp Example
 
-> A sample gulpfile for teaching Gulp to students.
+> Simple Express app used to teach Gulp and why it's useful
+
+This gulp boilerplate uses a simple, single-route Express application in order to show what task runners are useful for while also teaching the gulp API.
 
 ## Installation and setup
 
 Because this is meant for students we want to keep this as simple as possible. Let's start with system requirements:
 
-- Node.js 4.0+
+- Node.js 5.0+ (nvm usage is preferred)
 - Gulp (task runner)
 - Bower (front-end package manager)
 
@@ -18,9 +20,11 @@ npm install -g gulp-cli bower
 
 ### Installation
 
-Just run `npm install`
+Just run `npm install` and you'll be good to go. Create a `.nvmrc` file with your preferred Node version
 
 ## Usage
+
+The code comes working by default so the idea is to recreate the `gulpfile` and tasks either by copying this project verbatim or use parts of this project's `gulpfile.js` within another lesson's `gulpfile.js`.
 
 The project comes with 3 main gulp tasks:
 
