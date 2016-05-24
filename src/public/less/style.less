@@ -9,8 +9,6 @@
  * middle, then mobile styles at the end.
  */
 
-@normalize-path: '../vendor/normalize-css/normalize.css'; // Path to normalize.css
-
 ::selection { background: @orange; color: @white; }
 ::moz-selection { background: @orange; color: @white; }
 
@@ -18,7 +16,7 @@
 // ===============
 // Normalize.css is pulled in at
 // build time using a copy from Bower
-@import (inline) @normalize-path;
+@import (inline) '../vendor/normalize-css/normalize.css';
 @import 'modules/colors';     // Global color scheme
 @import 'modules/mixins';     // Mixins
 //@import 'modules/grid';       // Baseline grid
